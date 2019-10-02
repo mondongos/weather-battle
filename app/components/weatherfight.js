@@ -31,7 +31,8 @@ export default class WeatherFight extends React.Component {
     }
      
     render() {
-        const { city1, city2} = this.state
+        const { city1, city2, fight} = this.state
+
         if (fight === true) {
             return <Results city1={city1} city2={city2}/>
         }
@@ -65,14 +66,13 @@ export default class WeatherFight extends React.Component {
                                 />
                         }
                     </div>
-                    {city1 && city2 (
+                    { city1 && city2 && (
                         <button
                         onClick={() => this.setState({fight: true})}>
                             Fight!
                         </button>
                     )}
                 </div>
-                
             </React.Fragment>
         )
     }
