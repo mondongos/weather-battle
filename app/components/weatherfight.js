@@ -1,7 +1,7 @@
 import React from 'react'
-import { Instructions } from './instructions'
+import { Instructions } from '../containers/instructions'
 import CityInput from './cityinput'
-import { CityPreview } from './citypreview'
+import { CityPreview } from '../containers/citypreview'
 import Results from './results'
 
 export default class WeatherFight extends React.Component {
